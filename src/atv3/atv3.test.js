@@ -1,9 +1,8 @@
-// tests/shipping.test.js 
-const { calculateShipping } = require('../src/shipping'); 
+
+const { calculateShipping } = require('./shipping.js'); 
 describe('calculateShipping', () => { 
 test('deve calcular corretamente o frete com peso e distância', () => { 
-const result = calculateShipping(10, 100); 
-// (10 * 0.5) + (100 * 0.1) = 5 + 10 = 15 
+const result = calculateShipping(10, 100);  
 expect(result).toBe(15.00); 
 }); 
 test('deve calcular corretamente com valores zero', () => { 
