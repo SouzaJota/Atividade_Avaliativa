@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 const { calculateShipping } = require('../shipping');
 
 const peso = document.getElementById('peso');
@@ -16,3 +18,4 @@ botao.addEventListener('click', () => {
     resultado.textContent = error.message;
   }
 });
+>>>>>>> 99d8153e48da945b0966c12cf926cddd441a705e
