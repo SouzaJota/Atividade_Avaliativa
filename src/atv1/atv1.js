@@ -20,3 +20,17 @@ function calculateFinalPrice(cost, profitMargin) {
 module.exports = {
   calculateFinalPrice,
 };
+
+    function calcular() {
+            const preco = parseFloat(document.getElementById('preco').value);
+            const margem = parseFloat(document.getElementById('margem').value);
+            const resultado = document.getElementById('resultado');
+
+            if (isNaN(preco) || isNaN(margem)) {
+                resultado.textContent = "Por favor, insira valores válidos.";
+                return;
+            }
+
+            const finalPrice = preco + (preco * margem / 100);
+            resultado.textContent = `O preço final é: R$ ${finalPrice.toFixed(2)}`;
+        }
