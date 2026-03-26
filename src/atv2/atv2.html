@@ -2,10 +2,23 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo de desconto em vendas</title>
+    <title>Atividade 2 - Desconto</title>
+    <link rel="stylesheet" href="atv2.css">
 </head>
 <body>
-    
+    <div class="painel">
+        <h3>Cálculo de Desconto</h3>
+        
+        <label for="valorCompra">Valor da Compra (R$):</label>
+        <input type="number" id="valorCompra" placeholder="0.00" step="0.01">
+        
+        <button id="btnCalcular">Calcular</button>
+
+        <div id="resultado" style="display: none;">
+            <div id="textoResultado"></div>
+        </div>
+    </div>
+
+    <script src="atv2.js"></script>
 </body>
 </html>
