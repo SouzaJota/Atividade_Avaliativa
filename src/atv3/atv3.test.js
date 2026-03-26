@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 
 const { calculateShipping } = require('./shipping.js'); 
 describe('calculateShipping', () => { 
@@ -23,4 +21,3 @@ expect(() => calculateShipping("10", 100)).toThrow();
 expect(() => calculateShipping(10, "100")).toThrow(); 
 }); 
 });
->>>>>>> 99d8153e48da945b0966c12cf926cddd441a705e
